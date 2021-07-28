@@ -1,0 +1,13 @@
+<h1>Lists: dramas, favoritas de siempre, super chicas</h1>
+
+<ul>
+  <% @lists.each do |list| %>
+    <li>
+      <h2>
+        <%= link_to list.name.capitalize, list_path(list) %>
+      </h2>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Lista Nueva", new_list_path %>
