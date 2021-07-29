@@ -1,6 +1,6 @@
-<%= form_for @list do |f| %>
-  <%= f.label :name, "Nombre" %>
-  <%= f.text_field :name %>
+<%= simple_form_for @list do |f| %>
+  <%= f.input :name %>
+  <%= f.input :photo %>
   <%= f.submit "Agregar" %>
   <% end %>
 
